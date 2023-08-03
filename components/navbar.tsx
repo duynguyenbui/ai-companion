@@ -6,7 +6,7 @@ import { Sparkles } from 'lucide-react';
 import { Poppins } from 'next/font/google';
 import { Button } from '@/components/ui/button';
 import { ModeToggle } from '@/components/mode-toggle';
-import { MoblieSidebar } from '@/components/mobile-sidebar';
+import { MobileSidebar } from '@/components/mobile-sidebar';
 
 import { cn } from '@/lib/utils';
 import { useProModal } from '@/hooks/use-pro-modal';
@@ -31,7 +31,7 @@ const Navbar = ({ isPro }: NavbarProps) => {
         bg-secondary h-16"
     >
       <div className="flex items-center">
-        <MoblieSidebar />
+        <MobileSidebar isPro={isPro} />
         <Link href="/">
           <h1
             className={cn(
